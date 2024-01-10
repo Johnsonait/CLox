@@ -1,13 +1,18 @@
 #ifndef CLOX_CHUNK_H
 #define CLOX_CHUNK_H
 
-#include <common.h>
+#include "common.h"
 
 #include "value.h"
 
 // Enum to represent various virtual-machine instructions
 typedef enum {
     OP_CONSTANT,
+    OP_ADD,
+    OP_SUBTRACT,
+    OP_MULTIPLY,
+    OP_DIVIDE,
+    OP_NEGATE,
     OP_RETURN,
 } OpCode;
 
